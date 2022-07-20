@@ -32,19 +32,19 @@ apt -y install docker.io
 #apt-get install -y build-essential clang-7 llvm-7 libelf-dev python3.8 python3-pip libcmocka-dev lcov python3.8-dev python3-apt pkg-config
 #python3 -m pip install --user grpcio-tools
 
-sudo mkdir -p /etc/docker
-cat <<EOF | sudo tee /etc/docker/daemon.json
-{
-  "exec-opts": ["native.cgroupdriver=systemd"],
-  "log-driver": "json-file",
-  "log-opts": {
-    "max-size": "100m"
-  },
-  "storage-driver": "overlay2"
-}
-EOF
-
-systemctl enable docker
-systemctl daemon-reload
-systemctl restart docker
+#sudo mkdir -p /etc/docker
+#cat <<EOF | sudo tee /etc/docker/daemon.json
+#{
+#  "exec-opts": ["native.cgroupdriver=systemd"],
+#  "log-driver": "json-file",
+#  "log-opts": {
+#    "max-size": "100m"
+#  },
+#  "storage-driver": "overlay2"
+#}
+#EOF
+#
+#systemctl enable docker
+#systemctl daemon-reload
+#systemctl restart docker
 
