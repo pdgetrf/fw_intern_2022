@@ -3,7 +3,8 @@
 # use this script as a document
 CLOUD_MACHINE_PUBLIC_IP=35.90.205.88
 
-kubeadm init --control-plane-endpoint=$CLOUD_MACHINE_PUBLIC_IP
+# don't change 10.244.0.0/16
+kubeadm init --control-plane-endpoint=$CLOUD_MACHINE_PUBLIC_IP --pod-network-cidr=10.244.0.0/16
 
 export KUBECONFIG=/etc/kubernetes/admin.conf 	# also, add the above export to .bashrc
 source ~/.bashrc 	
