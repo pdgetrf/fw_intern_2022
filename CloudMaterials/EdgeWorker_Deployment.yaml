@@ -36,6 +36,6 @@ spec:
         - name: edge-volume
           hostPath:
             # directory location on host
-            path: /root/EdgeMaterials
+            path: /root/fw_intern_2022/EdgeMaterials
       nodeSelector:
         workerType: edgeworker
