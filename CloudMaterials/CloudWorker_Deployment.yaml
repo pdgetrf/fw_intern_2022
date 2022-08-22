@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-end
+  labels:
+    app: cloud-end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-end
+  template:
+    metadata:
+      labels:
+        app: cloud-end
+    spec:        
+      containers:
+      - name: cloud-end
+        image: cloudimage
+        imagePullPolicy: Never
+        volumeMounts:
+        - mountPath: /cloud_path
+          name: cloud-volume
+        command: ["/bin/sh","-c"]
+        args: ["go run FetchData.go"]
+      dnsPolicy: "None"
+      dnsConfig:
+        nameservers:
+          - 8.8.8.8
+        searches:
+          - us-west-2.compute.internal
+        options:
+           - name: edns0
+      volumes:
+      - name: cloud-volume
+        hostPath:
+            # directory location on host
+          path: /root/CloudWorkerMaterials
+      nodeSelector:
+        workerType: cloudworker

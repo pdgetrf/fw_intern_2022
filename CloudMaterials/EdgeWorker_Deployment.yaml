@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edge-end
+  labels:
+    app: edge-end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edge-end
+  template:
+    metadata:
+      labels:
+        app: edge-end
+    spec:
+      hostNetwork: true
+      containers:
+        - name: edge-end
+          image: edgeimage
+          imagePullPolicy: Never
+          volumeMounts:
+            - mountPath: /edge-path
+              name: edge-volume
+          command: ["/bin/sh","-c"] 
+          args: [ "go run UploadData.go" ]
+      dnsPolicy: "None"
+      dnsConfig:
+        nameservers:
+          - 8.8.8.8
+        searches:
+          - us-west-2.compute.internal
+        options:
+          - name: edns0
+      volumes:
+        - name: edge-volume
+          hostPath:
+            # directory location on host
+            path: /root/EdgeMaterials
+      nodeSelector:
+        workerType: edgeworker
