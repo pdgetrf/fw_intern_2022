@@ -35,6 +35,6 @@ spec:
       - name: cloud-volume
         hostPath:
             # directory location on host
-          path: /root/CloudWorkerMaterials
+          path: /root/fw_intern_2022/CloudWorkerMaterials
       nodeSelector:
         workerType: cloudworker
