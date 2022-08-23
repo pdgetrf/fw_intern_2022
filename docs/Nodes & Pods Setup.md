@@ -77,7 +77,7 @@ kubectl apply -f EdgeWorker_Deployment.yaml
 ```
 Now, when you run the command '_kubectl get pods -o wide_', you should have 2 pods running on the correct node, looks like:
 ![two pods running picture](https://user-images.githubusercontent.com/108478119/186237938-fb227013-e9b0-44e0-b44b-28c040396c9c.png)
-If you see this status, congratulations! All the preparation and configuration are done! You are ready to move to the [next step](https://www.google.com/)!\
+If you see this status, congratulations! All the preparation and configuration are done! You are ready to move to the [next step](https://www.google.com/)!
 
 
 
