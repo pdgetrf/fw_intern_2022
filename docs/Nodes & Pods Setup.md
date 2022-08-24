@@ -7,7 +7,7 @@
 
 # Setting up the nodes & pods environment
 ## 1. Edge Configuration
-On the Edge side, we need to first install the aws under the EdgeMaterials directory use the command
+On the Edge side, we need to first install the aws under the **EdgeMaterials directory** use the command
 ```bash
 sudo apt-get update
 ```
@@ -18,7 +18,7 @@ sudo apt-get install awscli
 
 Next, config the AWS CLI by running
 ```bash
-root@ip-172-31-9-23:~# aws configure
+root@ip-172-31-9-23:/root/fw_intern_2022/EdgeMaterials# aws configure
 AWS Access Key ID [None]: --[your access key id]--
 AWS Secret Access Key [None]: --[your secret access key]--
 Default region name [None]: --[your default region, for example us-west-2]--
