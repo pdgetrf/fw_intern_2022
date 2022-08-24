@@ -2,11 +2,22 @@
            1. You have followed all the steps list in the 'K8s & KubeEdge Setup' and see the expected output.
            2. There are three nodes running on the proper virtual machines.
 
-[K8s & KubeEdge Setup](https://github.com/pdgetrf/fw_intern_2022/blob/main/docs/K8s%20%26%20KubeEdge%20Setup.md)
+[K8s & KubeEdge Setup](https://github.com/pdgetrf/fw_intern_2022/blob/main/docs/K8s%20%26%20KubeEdge%20Setup.md)\
+[AWS Installation](https://linuxhint.com/install_aws_cli_ubuntu/)
 
 # Setting up the nodes & pods environment
 ## 1. Edge Configuration
-On the Edge side, we need to first build the docker image so that the deployment from Cloud can be successfully assigned on Edge.\
+On the Edge side, we need to first install the aws under the EdgeMaterials directory use the command
+```bash
+sudo apt-get update
+```
+and then run
+```bash
+sudo apt-get install awscli
+```
+Now, if you use '_ls -la_', you should see the folder named '.aws' exist along with the files.\
+\
+Next, we need to build the docker image so that the deployment from Cloud can be successfully assigned on Edge.\
 \
 To build the docker image, run
 ```bash
@@ -23,7 +34,7 @@ Now, you are ready to move to configure the Cloud Worker!
 
 
 ## 2. Cloud Worker Configuration
-Similiar with what we did on the Edge, the Cloud Worker also needs a docker image to handle the deployment request from the Cloud.\
+Similiar with what we did on the Edge, the Cloud Worker also needs to have aws installed, and a docker image to handle the deployment request from the Cloud. Please make sure you have .aws under the CloudMaterial directory before building the docker image.\
 \
 To build the docker image, run
 ```bash
@@ -61,6 +72,8 @@ kubectl label nodes ip-172-31-8-170 workerType=edgeworker
 ```
 Then, you should see something similiar with the following
 ![Three nodes with labels picture](https://user-images.githubusercontent.com/108478119/186236786-04301d3e-544f-43cf-a1a0-3c019d97ff55.png)
+**Note: You only change the node name in the command to your own node name, don't modify the workerType.**
+
 If everything works, congrats! Now the preparation work is done, and you will be able to properly assign pods to your nodes!
 
 
