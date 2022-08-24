@@ -6,7 +6,7 @@
 
 # Setting up the Kubernetes & KubeEdge environment
 ## 1. Docker & Kubernetes Installation
-On each of your virtual machines, move to the folder named **'K8s & KubeEdge Setup Scripts'** and run the following command:
+On each of your virtual machines, move to the folder named **'K8s_KubeEdge_Setup_Scripts'** and run the following command:
 ```bash
 ./0_node_setup_master.sh
 ```
