@@ -18,7 +18,7 @@ sudo apt-get install awscli
 
 Next, config the AWS CLI by running
 ```bash
-root@ip-172-31-9-23:/root/fw_intern_2022/EdgeMaterials# aws configure
+root@ip-172-31-9-23:~/fw_intern_2022/EdgeMaterials# aws configure
 AWS Access Key ID [None]: --[your access key id]--
 AWS Secret Access Key [None]: --[your secret access key]--
 Default region name [None]: --[your default region, for example us-west-2]--
@@ -115,7 +115,7 @@ kubectl apply -f EdgeWorker_Deployment.yaml
 ```
 Now, when you run the command '_kubectl get pods -o wide_', you should have 2 pods running on the correct node, looks like:
 ![two pods running picture](https://user-images.githubusercontent.com/108478119/186237938-fb227013-e9b0-44e0-b44b-28c040396c9c.png)
-If you see this status, congratulations! All the preparation and configuration are done! You are ready to move to the [next step](https://www.google.com/)!
+If you see this status, congratulations! All the preparation and configuration are done! You are ready to move to the [next step](https://github.com/pdgetrf/fw_intern_2022/blob/main/docs/Program%20Execution.md)!
 
 
 
