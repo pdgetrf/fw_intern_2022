@@ -2,6 +2,7 @@
            1. You have three running virtual machines (ubuntu-18.04) which represent Cloud, Cloud Worker, and the Edge Worker.
            2. Please make sure you set all three virtual machines' inbound rules type to 'ALL TCP'.
            3. You have cloned this repo under /root on all of these virtual machines.
+           4. All to be done as root
 
 # Setting up the Kubernetes & KubeEdge environment
 ## 1. Docker & Kubernetes Installation
