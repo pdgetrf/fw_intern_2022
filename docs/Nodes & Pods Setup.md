@@ -30,6 +30,7 @@ Next, we need to build the docker image so that the deployment from Cloud can be
 \
 To build the docker image, run
 ```bash
+cd /root/fw_intern_2022/EdgeMaterials
 docker build -t edgeimage .
 ```
 and run the following command to check if your image is ready
