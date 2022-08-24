@@ -38,9 +38,7 @@ Now, if you go back to the **Cloud** machine and run
 kubectl get nodes -o wide
 ```
 You should see there are two nodes in the list, which look like this:
-```bash
-Add a cloud & cloud worker picture
-```
+<img width="1196" alt="image" src="https://user-images.githubusercontent.com/252020/186497975-99e2bdd5-07e3-4aba-8ea7-4220a7b2b3d0.png">
 
 ## 4. Installing KubeEdge & Starting Cloud Core
 Once you connect the **Cloud** and the **Cloud Worker**, under the same path in your **Cloud** machine, open the file named '2_start_cloud_core.sh'.\
