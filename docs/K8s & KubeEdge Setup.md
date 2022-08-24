@@ -43,7 +43,7 @@ You should see there are two nodes in the list, which look like this:
 ## 4. Installing KubeEdge & Starting Cloud Core
 Once you connect the **Cloud** and the **Cloud Worker**, under the same path in your **Cloud Master** machine, open the file named '2_start_cloud_core.sh'.\
 \
-Modify the **CLOUD_MACHINE_PUBLIC_IP** to the public IP address of your **Cloud machine**. Then, run the following command to install KubeEdge and start its cloud core:
+Modify the **CLOUD_MACHINE_PUBLIC_IP** to the public IP address of your **Cloud Master machine**. Then, run the following command to install KubeEdge and start its cloud core:
 ```bash
 ./2_start_cloud_core.sh
 ```
