@@ -15,6 +15,15 @@ and then run
 ```bash
 sudo apt-get install awscli
 ```
+
+Next, config the AWS CLI by running
+```bash
+root@ip-172-31-9-23:~# aws configure
+AWS Access Key ID [None]: --[your access key id]--
+AWS Secret Access Key [None]: --[your secret access key]--
+Default region name [None]: --[your default region, for example us-west-2]--
+Default output format [None]: text
+```
 Now, if you use '_ls -la_', you should see the folder named '.aws' exist along with the files.\
 \
 Next, we need to build the docker image so that the deployment from Cloud can be successfully assigned on Edge.\
