@@ -29,9 +29,8 @@ Then, to start the kubernetes master node, the run the command:
 
 ## 3. Connecting the Cloud with the Cloud Worker
 After running the **'1_start_k8s.sh'**, you should see a join command looks like this:
-```bash
-Add a join command picture
-```
+<img width="909" alt="image" src="https://user-images.githubusercontent.com/252020/186497031-6690ddfa-d5df-4dff-bde7-df703b4fcc31.png">
+
 Copy it, and move to the **Cloud Worker** machine, run the installation script(**0_node_setup_master.sh**). After you have installed Docker & Kubernetes, run the join command you just copied from the **Cloud**.\
 \
 Now, if you go back to the **Cloud** machine and run
