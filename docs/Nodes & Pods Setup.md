@@ -7,7 +7,7 @@
 
 # Setting up the nodes & pods environment
 ## 1. Edge Configuration
-On the Edge side, we need to first install the aws under the **EdgeMaterials directory** use the command
+On the Edge machine, we need to first install the aws under the **EdgeMaterials directory** use the command
 ```bash
 sudo apt-get update
 ```
@@ -53,7 +53,7 @@ Now, copy the link of up_arg3, and you are ready to move to configure the Cloud 
 
 
 ## 2. Cloud Worker Configuration
-Open the file 'FetchData.go', and replace the link assign to the 'arg2' to the link you just copied at line 14. Save the file and exit.\
+On the Cloud Worker machine, open the file 'FetchData.go', and replace the link assign to the 'arg2' to the link you just copied at line 14. Save the file and exit.\
 \
 To match the previous example, it should looks like
 ```bash
@@ -81,7 +81,7 @@ Once you have the containerd image, it the time to move forward to the Cloud sid
 
 
 ## 3. Cloud Configuration
-On Cloud machine, for assigning the pod to the node precisely, you may want to label your nodes so that they are easy to be distinguished.\
+On the Cloud machine, for assigning the pod to the node precisely, you may want to label your nodes so that they are easy to be distinguished.\
 To check the node with existing labels, run
 ```bash
 kubectl get nodes --show-labels
