@@ -28,12 +28,27 @@ and run the following command to check if your image is ready
 docker images
 ```
 If everything goes well, you should see something like the following\
-![Edge Docker image picture](https://user-images.githubusercontent.com/108478119/186229404-e86620ca-1b39-4bd0-a404-c5864ebe079d.png)
+![Edge Docker image picture](https://user-images.githubusercontent.com/108478119/186229404-e86620ca-1b39-4bd0-a404-c5864ebe079d.png)\
 
-Now, you are ready to move to configure the Cloud Worker!
+Open the file 'UploadData.go' and change line 15 to the following format with your own information
+```bash
+up_arg3 := "s3://[$your AWS s3 bucket name]/[$your desired file name]"
+```
+An example would be
+```bash
+up_arg3 := "s3://demo-bucket/demo_data.txt"
+```
+
+Now, copy the link of up_arg3, and you are ready to move to configure the Cloud Worker!
 
 
 ## 2. Cloud Worker Configuration
+Open the file 'FetchData.go', and replace the link assign to the 'arg2' to the link you just copied at line 14. Save the file and exit.\
+\
+To match the previous example, it should looks like
+```bash
+arg2 := "s3://demo-bucket/demo_data.txt"
+```
 Similiar with what we did on the Edge, the Cloud Worker also needs to have aws installed, and a docker image to handle the deployment request from the Cloud. Please make sure you have .aws under the CloudMaterial directory before building the docker image.\
 \
 To build the docker image, run
