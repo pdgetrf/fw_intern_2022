@@ -1,5 +1,5 @@
 ### Note:  Before jumping into the setup instruction, please make sure
-           1. You have three running virtual machines which represent Cloud, Cloud Worker, and the Edge Worker.
+           1. You have three running virtual machines (ubuntu-18.04) which represent Cloud, Cloud Worker, and the Edge Worker.
            2. Please make sure you set all three virtual machine's inbound rules type to 'ALL TCP'.
            3. you have placed this project under the root directory on all of these virtual machines.
 
