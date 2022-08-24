@@ -1,5 +1,5 @@
 ### Note:  Before jumping into the setup instruction, please make sure
-           1. You have followed all the steps list in the 'K8s & KubeEdge Setup' and see the expected output.
+           1. You have followed all the steps list in the 'K8s & KubeEdge Setup' and seen the expected output.
            2. There are three nodes running on the proper virtual machines.
 
 [K8s & KubeEdge Setup](https://github.com/pdgetrf/fw_intern_2022/blob/main/docs/K8s%20%26%20KubeEdge%20Setup.md)\
