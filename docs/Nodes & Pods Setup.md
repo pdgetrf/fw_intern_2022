@@ -59,7 +59,7 @@ To match the previous example, it should looks like
 ```bash
 arg2 := "s3://demo-bucket/demo_data.txt"
 ```
-Similiar with what we did on the Edge, the Cloud Worker also needs to have aws installed, and a docker image to handle the deployment request from the Cloud. Please make sure you have .aws under the CloudMaterial directory before building the docker image.\
+Similiar with what we did on the Edge, the Cloud Worker also needs to have aws installed, and a docker image to handle the deployment request from the Cloud. **Please make sure you have .aws under the CloudMaterial directory before building the docker image.**\
 \
 To build the docker image, run
 ```bash
