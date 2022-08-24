@@ -29,7 +29,7 @@ Then, to start the kubernetes master node, the run the command:
 
 ## 3. Connecting the Cloud with the Cloud Worker
 After running the **'1_start_k8s.sh'**, you should see a join command looks like this:
-<img width="909" alt="image" src="https://user-images.githubusercontent.com/252020/186497031-6690ddfa-d5df-4dff-bde7-df703b4fcc31.png">
+<img width="80%" alt="image" src="https://user-images.githubusercontent.com/252020/186497031-6690ddfa-d5df-4dff-bde7-df703b4fcc31.png">
 
 Copy it, and move to the **Cloud Worker** machine, run the installation script(**0_node_setup_master.sh**). After you have installed Docker & Kubernetes, run the join command you just copied from the **Cloud**.\
 \
@@ -38,7 +38,7 @@ Now, if you go back to the **Cloud** machine and run
 kubectl get nodes -o wide
 ```
 You should see there are two nodes in the list, which look like this:
-<img width="1196" alt="image" src="https://user-images.githubusercontent.com/252020/186497975-99e2bdd5-07e3-4aba-8ea7-4220a7b2b3d0.png">
+<img width="1180" alt="image" src="https://user-images.githubusercontent.com/252020/186500528-671e0dc4-f8be-4bff-86c4-63ea8b1a8376.png">
 
 ## 4. Installing KubeEdge & Starting Cloud Core
 Once you connect the **Cloud** and the **Cloud Worker**, under the same path in your **Cloud Master** machine, open the file named '2_start_cloud_core.sh'.\
