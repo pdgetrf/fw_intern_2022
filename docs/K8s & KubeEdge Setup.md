@@ -73,9 +73,8 @@ Now, if you go back to the **Cloud** machine and check the existing nodes by run
 kubectl get nodes -o wide
 ```
 You should see something looks like:
-```bash
-Add 3 nodes picture
-```
+<img width="1323" alt="image" src="https://user-images.githubusercontent.com/252020/186502798-ee72c018-6f88-4c20-91ea-7fadf6177a67.png">
+
 \
 If you see the above nodes status on your **Cloud** machine, congratulations! You have successfully set up the Kubernetes & KubeEdge environment for the nodes!
 
