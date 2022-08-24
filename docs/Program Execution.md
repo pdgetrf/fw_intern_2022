@@ -15,7 +15,7 @@ As you can notice, now we are in the container environment. To start the server,
 ```bash
 python3 healthserver.py &
 ```
-**Note: Please remember to kill it if you run it in the background.**
+**Note: Please remember to kill the process if you run it in the background.**
 
 ## 2. Open the emulator and check your AWS s3 storage
 In Android Studio, go find the app named 'HeartRatetoWeb', put your public IP address of your Edge machine and run it.
