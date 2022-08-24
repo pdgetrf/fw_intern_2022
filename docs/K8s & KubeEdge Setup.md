@@ -56,6 +56,7 @@ Copy the token and move to your **Edge** Machine.
 ## 5. Connecting the Cloud with the Edge Worker
 On your **Edge** machine, run the following three commands one at a time to install KubeEdge and move to the correct directory
 ```bash
+apt-get update
 wget  https://github.com/kubeedge/kubeedge/releases/download/v1.9.2/keadm-v1.9.2-linux-amd64.tar.gz
 tar zxvf  keadm-v1.9.2-linux-amd64.tar.gz
 cd keadm-v1.9.2-linux-amd64/
