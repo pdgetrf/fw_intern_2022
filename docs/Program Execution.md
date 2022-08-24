@@ -19,11 +19,20 @@ python3 healthserver.py &
 
 ## 2. Open the emulator and check your AWS s3 storage
 In Android Studio, go find the app named 'HeartRatetoWeb', put your public IP address of your Edge machine and run it.
-![Screen Shot 2022-08-24 at 10 25 06 AM](https://user-images.githubusercontent.com/108478119/186484098-09836e26-0679-4728-834e-57f93042ffc9.png)\
+![Emulator Screenshot](https://user-images.githubusercontent.com/108478119/186484098-09836e26-0679-4728-834e-57f93042ffc9.png)\
 If you go the the upper right corner, click on the button made by three dots which represent 'extended controls', you will be able to change the 
 heart rate(bpm). 
+<img width="950" height="140" alt="Screen Shot 2022-08-24 at 11 44 48 AM" src="https://user-images.githubusercontent.com/108478119/186498409-a9be3a27-0769-41e0-ad0f-c8e70908560b.png">
 
-## 3. Revieve the information in Cloud
+Now, if you open the edge_data.txt file on you Edge machine, you should see all the changes has been recorded here
+![Edge data recieve from Android Studio](https://user-images.githubusercontent.com/108478119/186497471-312ebb69-f600-40eb-8c98-5ef8aa95aa46.png)
+
+Open the AWS s3 link you updated in [Nodes & Pods Setup](https://github.com/pdgetrf/fw_intern_2022/blob/main/docs/Nodes%20%26%20Pods%20Setup.md), you
+should see the edge_data.txt is already there.
+
+If the data in the file matches what you have on the Edge machine, you are ready to move forward!
+
+## 3. Recieve the information in Cloud
 On your Cloud machine, run the command
 ```bash
 kubectl get pods -o wide
@@ -37,7 +46,7 @@ kubectl exec -it [$Container name] sh
 ```
 **Note: In this case, the container name is 'cloud-end-7dd8c48676-ghj25'.**\
 \
-Now you can check the heart rate data that you recieved from cloud storage! The expected output should be something like
+Now you can check the edge_data.txt to see the heart rate data that you recieved from cloud storage! The expected output should be something like
 ![Screen Shot 2022-08-24 at 10 32 41 AM](https://user-images.githubusercontent.com/108478119/186485455-a2d220c2-dbb5-4468-a536-9a73b7bf8695.png)
 \
 **Congratulations! You are able to play with it by your own now!**
