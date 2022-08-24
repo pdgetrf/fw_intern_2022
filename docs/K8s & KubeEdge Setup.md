@@ -1,7 +1,7 @@
 ### Note:  Before jumping into the setup instruction, please make sure
            1. You have three running virtual machines (ubuntu-18.04) which represent Cloud, Cloud Worker, and the Edge Worker.
            2. Please make sure you set all three virtual machines' inbound rules type to 'ALL TCP'.
-           3. You have placed this project under the root directory on all of these virtual machines.
+           3. You have placed this repo under the /root on all of these virtual machines.
 
 # Setting up the Kubernetes & KubeEdge environment
 ## 1. Docker & Kubernetes Installation
