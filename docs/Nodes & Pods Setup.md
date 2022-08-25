@@ -26,6 +26,15 @@ Default output format [None]: text
 ```
 Now, if you use '_ls -la_', you should see the folder named '.aws' exist along with the files.\
 \
+Open the file 'UploadData.go' and change line 15 to the following format with your own information
+```bash
+up_arg3 := "s3://[$your AWS s3 bucket name]/[$your desired file name]"
+```
+An example would be
+```bash
+up_arg3 := "s3://demo-bucket/demo_data.txt"
+```
+
 Next, we need to build the docker image so that the deployment from Cloud can be successfully assigned on Edge.\
 \
 To build the docker image, run
@@ -39,15 +48,6 @@ docker images
 ```
 If everything goes well, you should see something like the following\
 ![Edge Docker image picture](https://user-images.githubusercontent.com/108478119/186229404-e86620ca-1b39-4bd0-a404-c5864ebe079d.png)\
-
-Open the file 'UploadData.go' and change line 15 to the following format with your own information
-```bash
-up_arg3 := "s3://[$your AWS s3 bucket name]/[$your desired file name]"
-```
-An example would be
-```bash
-up_arg3 := "s3://demo-bucket/demo_data.txt"
-```
 
 Now, copy the link of up_arg3, and you are ready to move to configure the Cloud Worker!
 
