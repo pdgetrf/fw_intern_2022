@@ -26,7 +26,7 @@ Default output format [None]: text
 ```
 Then, run the following command to get the aws from root directory
 ```bash
-mv ~/.aws/ ./
+cp -r ~/.aws/ ./
 ```
 Now, if you use '_ls -la_', you should see the folder named '.aws' exist along with the files.\
 \
