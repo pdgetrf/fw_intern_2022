@@ -68,7 +68,7 @@ docker build -t cloudimage .
 Use the same command above to check if the image is ready. If everything goes well, you should see something like the following\
 ![Cloud Worker Docker image picture](https://user-images.githubusercontent.com/108478119/186229036-b516f4dd-ee73-4d33-918d-b5def0d668fd.png)
 
-Since kuberbets used containerd as the runtime container environment, you need to switch the docker image to containerd version.\
+Since kubelet uses containerd as the runtime container environment, you need to switch the docker image to containerd version.\
 To do that, run '_docker save -o xxx.tar $imageList_' to save the docker image into .tar first. An example would be
 ```bash
 docker save -o test.tar cloudimage
