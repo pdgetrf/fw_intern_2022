@@ -96,7 +96,8 @@ and
 kubectl label nodes ip-172-31-8-170 workerType=edgeworker
 ```
 Then, you should see something similiar with the following
-![Three nodes with labels picture](https://user-images.githubusercontent.com/108478119/186236786-04301d3e-544f-43cf-a1a0-3c019d97ff55.png)
+![Three nodes with labels picture](https://user-images.githubusercontent.com/252020/186566562-1acf2900-3ea4-4ee1-96ea-1224f6596967.png)
+
 **Note: You only change the node name in the command to your own node name, don't modify the workerType.**
 
 If everything works, congrats! Now the preparation work is done, and you will be able to properly assign pods to your nodes!
