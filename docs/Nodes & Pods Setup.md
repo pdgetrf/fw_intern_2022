@@ -24,6 +24,10 @@ AWS Secret Access Key [None]: --[your secret access key]--
 Default region name [None]: --[your default region, for example us-west-2]--
 Default output format [None]: text
 ```
+Then, run the following command to get the aws from root directory
+```bash
+mv ~/.aws/ ./
+```
 Now, if you use '_ls -la_', you should see the folder named '.aws' exist along with the files.\
 \
 Open the file 'UploadData.go' and change line 15 to the following format with your own information
