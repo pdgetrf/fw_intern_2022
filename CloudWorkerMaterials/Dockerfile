@@ -17,4 +17,4 @@ RUN mv /test-app/.aws ~/
 WORKDIR /test-app
 
 RUN go build FetchData.go
-CMD ["/test-app/HelloWorld"] 
+CMD ["/test-app"] 
