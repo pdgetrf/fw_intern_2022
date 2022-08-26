@@ -34,6 +34,6 @@ func main() {
 		// Print the output
 		fmt.Println(string(stdout2))
 
-		time.Sleep(time.Second * 10)
+		time.Sleep(time.Second * 5)
 	}
 }
