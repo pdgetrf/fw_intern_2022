@@ -19,5 +19,5 @@ WORKDIR /test-app/
 
 RUN go build UploadData.go &
 
-CMD ["/test-app/HelloWorld"]
+CMD ["/test-app"]
 
