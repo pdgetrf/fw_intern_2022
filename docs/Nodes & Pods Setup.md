@@ -24,7 +24,7 @@ AWS Secret Access Key [None]: --[your secret access key]--
 Default region name [None]: --[your default region, for example us-west-2]--
 Default output format [None]: text
 ```
-Then, run the following command to get the aws from root directory
+Then, run the following command to get the aws from root directory to the EdgeMaterials folder
 ```bash
 cp -r ~/.aws/ ./
 ```
